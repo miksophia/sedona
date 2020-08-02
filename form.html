@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Отзыв</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="main">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="images">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </nav>
+      <a class="page-header__logo">
+        <img
+          class="page-header__logo-image"
+          src="img/logotype-mobile.svg"
+          width="226"
+          height="30"
+          alt="Sedona"
+        />
+      </a>
+      <div class="intro">
+        <img
+          class="intro__photo"
+          src="http://placehold.it/282x214"
+          width="282"
+          height="214"
+          alt="Welcome to the gorgeus Sedona"
+        />
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title title">
+        Оставьте свой отзыв
+      </h1>
+      <p class="page-main__text">
+        Помогите нашим отелям стать лучше!<br />
+        Оставьте отзыв о них, а также о осещенных вами достопримечательностях
+      </p>
+      <div class="review">
+        <form action="#" method="POST">
+          <fieldset class="review__section">
+            <legend class="title">
+              Представьтесь:
+            </legend>
+            <label class="review__lable">
+              Имя*:
+              <input
+                required
+                class="review__name"
+                type="text"
+                placeholder="Петр"
+              /> </label
+            ><br />
+            <label class="review__lable">
+              Фамилия*:
+              <input
+                required
+                class="review__name"
+                type="text"
+                placeholder="Иванов"
+              /> </label
+            ><br />
+            <label class="review__lable">
+              Отчество:
+              <input
+                class="review__name"
+                type="text"
+                placeholder="Александрович"
+              />
+            </label>
+          </fieldset>
+          <fieldset class="review__section">
+            <legend class="title">
+              Контактная информация:
+            </legend>
+            <label class="review__lable" for="phone-number">
+              Контактный телефон*:
+            </label>
+            <input
+              type="tel"
+              id="phone-number"
+              required
+              placeholder="Введите телефон"
+            />
+            <p class="review__error-message">Ошибка, перепроверьте номер</p>
+            <label class="review__label" for="email">Электронная почта*:</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="Введите e-mail"
+            />
+            <p class="review__error-message">Ошибка, перепроверьте e-mail</p>
+          </fieldset>
+          <fieldset class="review__section">
+            <legend class="title">
+              Ваше общее впечатление:
+            </legend>
+            <label class="review__radio" for="positive">
+              Скорее положительное
+            </label>
+            <input type="radio" id="positive" name="impression" checked /><br />
+            <label class="review__radio" for="negatine">
+              Скорее отрицательное
+            </label>
+            <input type="radio" id="negatine" name="impression" /><br />
+            <label class="review__radio" for="hard-to-answer">
+              Затрудняюсь ответить
+            </label>
+            <input type="radio" id="hard-to-answer" name="impression" />
+          </fieldset>
+          <fieldset class="review__section">
+            <legend class="title">
+              Посещенные достопримечательности:
+            </legend>
+            <label class="review__checkbox" for="devils-bridge">
+              Мост Дьявола
+            </label>
+            <input
+              id="devils-bridge"
+              name="devils-bridge"
+              checked
+              type="checkbox"
+            />
+            <br />
+            <label class="review__checkbox" for="slide-park">
+              Слайд-парк
+            </label>
+            <input id="slide-park" type="checkbox" name="slide-park" /> <br />
+            <label class="review__checkbox" for="mountain-bell">
+              Гора-Колокол
+            </label>
+            <input id="mountain-bell" type="checkbox" name="mountain-bell" />
+            <br />
+            <label class="review__checkbox" for="red-rocks">
+              Красные скалы
+            </label>
+            <input id="red-rocks" type="checkbox" name="red-rocks" />
+          </fieldset>
+          <fieldset class="review__section">
+            <legend class="title">
+              Опишите свои эмоции:
+            </legend>
+            <textarea
+              class="review__textarea"
+              id="emotions"
+              name="emotions"
+              cols="30"
+              rows="10"
+              placeholder="Опишите подробно все свои восторги"
+            ></textarea>
+          </fieldset>
+        </form>
+        <button class="button" type="submit">Отправить отзыв</button>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <h2 class="page-footer__hashtag">
+        &num;VisitSedona
+      </h2>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              Twitter
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              Facebook
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
